@@ -1,0 +1,25 @@
+.search-control-panel {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  padding: 1rem 2rem 0 4rem;
+}
+
+.search-control-panel > * {
+  margin-top: 2rem;
+}
+
+.search-control-panel input {
+  font-family: inherit;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 0;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+
+.search-result-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

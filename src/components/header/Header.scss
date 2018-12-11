@@ -1,0 +1,19 @@
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+}
+
+.app-header-navbar span {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.app-header-navbar span:hover {
+  font-weight: bold;
+}
+
+.app-header-navbar span:first-child {
+  margin-right: 5rem;
+}
