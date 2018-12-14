@@ -8,7 +8,6 @@ export const getWeather = (city, country) => {
   store.dispatch({ type: 'FIND_CITY_REQUEST' });
   axios.get(`${url}?q=${city},${country}&APPID=${appId}`)
   .then((response) => {
-    console.log(response.data);
     store.dispatch({
       type: 'FIND_CITY__SUCCESS',
       city: response.data.name,

@@ -25,16 +25,16 @@ class CollectionView extends Component {
         <Header />
         <div className="search">
           <h3>Filter this!</h3>
-          <input
-            className="collection-input"
-            type="text"
-            value={this.state.search}
-            onChange={this.updateSearch}
-          />
-          <ul>
-          {filteredContent.map((e, i) => <li key={i}>{e}</li>
-          )}
-        </ul>
+            <input
+              className="collection-input"
+              type="text"
+              value={this.state.search}
+              onChange={this.updateSearch}
+            />
+            <ul>
+            {filteredContent.map((e, i) => <li key={i}>{e}</li>
+            )}
+            </ul>
         </div>
       </React.Fragment>
     );
