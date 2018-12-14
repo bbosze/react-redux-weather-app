@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './searchComponents.scss';
+import './searchComponents.css';
 import { getWeather } from '../../actions/ajaxGetMethods'
 
 class SearchControlPanel extends Component {

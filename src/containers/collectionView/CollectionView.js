@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../../components/header/Header';
 import { connect } from 'react-redux';
-import './CollectionView.scss';
+import './CollectionView.css';
 
 class CollectionView extends Component {
   state = {

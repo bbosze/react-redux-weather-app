@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './SearchView.scss';
+import './SearchView.css';
 import Header from '../../components/header/Header';
 import SearchControlPanel from '../../components/searchComponents/SearchControlPanel';
 import SearchResult from '../../components/searchComponents/SearchResult';

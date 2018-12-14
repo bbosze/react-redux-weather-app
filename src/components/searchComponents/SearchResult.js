@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import './searchComponents.scss';
+import './searchComponents.css';
 import ImageFilter from 'react-image-filter';
 import { addCollection } from '../../actions/nonAjaxMethods';
 
