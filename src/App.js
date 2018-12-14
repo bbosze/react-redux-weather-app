@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.scss';
-import SearchView from './containers/searchView/SearchView'
+import Router from "./Router";
 
 
 class App extends Component {
@@ -8,7 +8,7 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-       <SearchView />
+       <Router />
       </div>
     );
   }

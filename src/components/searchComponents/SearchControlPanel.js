@@ -4,22 +4,20 @@ import { getWeather } from '../../actions/ajaxGetMethods'
 
 class SearchControlPanel extends Component {
   state= {
-    city: 'london',
-    country: 'uk',
+    city: '',
     result: null,
   };
 
-  handleChange = async (e) => {
-    await this.setState({
+  handleChange = (e) => {
+    this.setState({
       [e.target.id]: e.target.value
     });
   };
 
   handleSubmit = (e) => {
     e.preventDefault();
-    (this.state.city && this.state.country)
+    this.state.city
     ? getWeather(this.state.city, this.state.country)
-      .then(data => console.log(data))
     : alert('YOU CANNOT DO THIS (ಠ_ಠ)');
   };
 
@@ -34,14 +32,6 @@ class SearchControlPanel extends Component {
             onChange={ this.handleChange }
             autoComplete="off"
             value={ this.state.city }
-          />
-          <input
-            id="country"
-            type="text"
-            placeholder="choose country"
-            onChange={ this.handleChange }
-            autoComplete="off"
-            value={ this.state.country }
           />
           <button
             className="app-button"

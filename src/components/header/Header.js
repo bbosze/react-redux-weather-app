@@ -1,16 +1,23 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './Header.scss';
+import { history } from '../../Router'
 
-const Header = () => {
-  return (
-    <div className="app-header">
+class Header extends Component {
+  handleClick = (e) => {
+    history.push(`/${e.currentTarget.dataset.id}`);
+  }
+
+  render() {
+    return (
+      <div className="app-header">
       <h1>beautiful weather app</h1>
       <div className="app-header-navbar">
-        <span>find a city</span>
-        <span>your collection of cities</span>
+      <span data-id="search" onClick={ this.handleClick }>find a city</span>
+      <span data-id="collection" onClick={ this.handleClick }>your collection of cities</span>
       </div>
-    </div>
-  )
+      </div>
+    )
+  }
 }
 
 export default Header;
