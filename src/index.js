@@ -11,7 +11,7 @@ import combinedReducers from './reducers/combinedReducers.js';
 
 export const store = createStore(
   combinedReducers,
-   compose(applyMiddleware(thunkMiddleWare), window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
+   // compose(applyMiddleware(thunkMiddleWare), window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
  );
 
  const render = () => {
