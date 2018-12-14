@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { store } from '../index';
 
-const url = 'http://api.openweathermap.org/data/2.5/weather';
+const url = 'https://api.openweathermap.org/data/2.5/weather';
 const appId = '02673844cf3238c5731670c16218981f';
 
 export const getWeather = (city, country) => {
