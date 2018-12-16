@@ -6,7 +6,6 @@ import { addCollection } from '../../actions/nonAjaxMethods';
 
 class SearchResult extends Component {
 
-
   handleClick = () => {
     addCollection(this.props.city, this.props.collection);
   }
