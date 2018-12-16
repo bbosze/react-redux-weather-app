@@ -17,7 +17,7 @@ class CollectionView extends Component {
   render() {
     let filteredContent = this.props.collection.filter(
       (item) => {
-        return item.toLowerCase().indexOf(this.state.search) !== -1;
+        return item.city.toLowerCase().indexOf(this.state.search) !== -1;
       }
     );
     return (
