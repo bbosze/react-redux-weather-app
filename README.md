@@ -1,1 +1,1 @@
-[Beautiful Weather App](https://index.hu).
+[Beautiful Weather App](https://bboszeweather.herokuapp.com).
